@@ -91,6 +91,15 @@
                 margin-top: 5em;
             }
 
+            #typed-element {
+                font-size: 1.75rem;
+                margin-bottom: 1rem;
+            }
+
+            .typed-cursor {
+                font-size: 1.75rem;
+            }
+
             /* Medium devices (landscape tablets, 768px and up) */
             @media only screen and (min-width: 768px) {
                 #banner-name {
@@ -125,7 +134,7 @@
                     <h1 id="banner-subname" class="fw-bold">Lintang Aji</h1>
 
                     <br>
-                    <h3>Fullstack Developer</h3>
+                    <span id="typed-element"></span>
                     <h3>2+ years of experience</h3>
                 </div>
 
@@ -351,16 +360,16 @@
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
                 <div class="modal-content text-white">
                     <div class="modal-header border-0">
-                        <h5 class="modal-title fw-bold" id="exampleModalLabel">Accounting and Warehouse Management System of CV. Harum Mekar</h5>
+                        <h3 class="modal-title fw-bold" id="exampleModalLabel">Accounting and Warehouse Management System of CV. Harum Mekar</h3>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <div class="mt-4">
+                        <div>
                             <h4 class="fw-bolder">About</h4>
                             <p>This information system is developed to record various transactions conducted by the company, such as purchases, sales, and production. In addition, this system is also used to record warehouse stock and generate various reports based on transaction data and available warehouse stock.</p>
                         </div>
 
-                        <div class="mt-4">
+                        <div class="mt-4 mb-3">
                             <h4 class="fw-bold">Technologies</h4>
                             <div>
                                 <span class="tech-stack-badge">Laravel</span>
@@ -446,11 +455,20 @@
         <script src="js/scripts.js"></script>
         <!-- Jquery -->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <!-- Typed js -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
         <script>
             function modalToggle(params) {
                 $('#'+params.toString()).modal('show');
             }
+
+            var typed = new Typed('#typed-element', {
+                strings: ['Software Engineer', 'Fullstack Developer.', 'Web Developer.', 'Backend Developer'],
+                typeSpeed: 50,
+                loop: true,
+                backSpeed: 25,
+            });
         </script>
     </body>
 </html>
