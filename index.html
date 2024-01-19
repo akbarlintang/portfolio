@@ -118,6 +118,17 @@
                 margin-right: 0 !important;
             }
 
+            .custom-container {
+                padding-right: 0;
+                padding-left: 0;
+            }
+
+            .introduction {
+                word-spacing: 10px;
+                line-height: 1.5;
+                font-size: 1rem;
+            }
+
             /* Medium devices (landscape tablets, 768px and up) */
             @media only screen and (min-width: 576px) {
                 .tech-stack-svg {
@@ -131,6 +142,10 @@
                     overflow: hidden;
                     text-overflow: ellipsis; /* Display "..." for overflow text */
                     white-space: nowrap; /* Prevent text from wrapping to the next line */
+                }
+
+                .introduction {
+                    font-size: 1.5rem;
                 }
             }
 
@@ -200,7 +215,7 @@
                 </div>
 
                 <div class="container">
-                    <h4 style="word-spacing: 10px; line-height: 1.5;">I am a Full Stack Web Developer with over two years of professional experience, proficient in a diverse range of web development technologies. I have a strong foundation in HTML, CSS (Bootstrap and Tailwind), JavaScript (jQuery and Vue.js), PHP (Laravel and CodeIgniter), Python (Django), and MySQL. <br><br> My expertise extends across the entire web development process, with a particular focus on back-end implementation. I am dedicated to delivering efficient and innovative solutions, continuously adapting to industry trends and emerging technologies.</h4>
+                    <h4 class="introduction">I am a Full Stack Web Developer with over two years of professional experience, proficient in a diverse range of web development technologies. I have a strong foundation in HTML, CSS (Bootstrap and Tailwind), JavaScript (jQuery and Vue.js), PHP (Laravel and CodeIgniter), Python (Django), and MySQL. <br><br> My expertise extends across the entire web development process, with a particular focus on back-end implementation. I am dedicated to delivering efficient and innovative solutions, continuously adapting to industry trends and emerging technologies.</h4>
                 </div>
             </div>
         </section>
@@ -254,7 +269,7 @@
 
         <!-- Projects -->
         <section id="projects">
-            <div class="text-white section-break container">
+            <div class="text-white section-break container custom-container">
                 <div class="mb-5">
                     <h1 class="fw-bold text-center">
                         <span><i class="lni lni-pallet"></i></span>
@@ -262,7 +277,7 @@
                     </h1>
                 </div>
 
-                <div class="row container">
+                <div class="row container custom-container">
                     <div class="col-12 col-md-6">
                         <div class="card mb-5 project-card" onclick="modalToggle('harum_mekar')">
                             <img src="assets/img/harum_mekar/dashboard.png" class="img-fluid" alt="Project image">
@@ -284,7 +299,7 @@
                     </div>
                 </div>
 
-                <div class="row container">
+                <div class="row container custom-container">
                     <div class="col-12 col-md-6">
                         <div class="card mb-5 project-card" onclick="modalToggle('ups')">
                             <img src="assets/img/ups/dashboard.png" class="img-fluid" alt="Project image">
@@ -306,7 +321,7 @@
                     </div>
                 </div>
 
-                <div class="row container">
+                <div class="row container custom-container">
                     <div class="col-12 col-md-6">
                         <div class="card mb-5 project-card" onclick="modalToggle('milla_laundry')">
                             <img src="assets/img/milla_laundry/cek invoice.png" class="img-fluid" alt="Project image">
@@ -328,7 +343,7 @@
                     </div>
                 </div>
 
-                <div class="row container">
+                <div class="row container custom-container">
                     <div class="col-12 col-md-6">
                         <div class="card mb-5 project-card" onclick="modalToggle('trashify')">
                             <img src="assets/img/trashify/home.png" class="img-fluid" alt="Project image">
@@ -350,7 +365,7 @@
                     </div>
                 </div>
 
-                <div class="row container">
+                <div class="row container custom-container">
                     <div class="col-12 col-md-6">
                         <div class="card mb-5 project-card" onclick="modalToggle('siasda')">
                             <img src="assets/img/siasda/home.png" class="img-fluid" alt="Project image">
