@@ -22,6 +22,9 @@
         <!-- Fontawesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <!-- Swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
         <style>
             body {
                 font-family: 'Poppins', sans-serif !important;
@@ -145,6 +148,11 @@
                 font-size: 1rem;
             }
 
+            .swiper {
+                width: 700px;
+                height: 150px;
+            }
+
             /* Medium devices (landscape tablets, 768px and up) */
             @media only screen and (min-width: 576px) {
                 .tech-stack-svg {
@@ -208,7 +216,7 @@
 
                     <br>
                     <span id="typed-element"></span>
-                    <h3>2+ years of experience</h3>
+                    <h3>3+ years of experience</h3>
                 </div>
 
                 <div class="position-absolute top-0 start-0 mt-4 ms-5">
@@ -239,7 +247,7 @@
                 </div>
 
                 <div class="container">
-                    <h4 class="introduction">I am a Full Stack Web Developer with over two years of professional experience, proficient in a diverse range of web development technologies. I have a strong foundation in HTML, CSS (Bootstrap and Tailwind), JavaScript (jQuery and Vue.js), PHP (Laravel and CodeIgniter), Python (Django), and MySQL. <br><br> My expertise extends across the entire web development process, with a particular focus on back-end implementation. I am dedicated to delivering efficient and innovative solutions, continuously adapting to industry trends and emerging technologies.</h4>
+                    <h4 class="introduction">I am a Full Stack Web Developer with over three years of professional experience, proficient in building dynamic, responsive, and efficient web applications. My technical skillset includes HTML, CSS (Bootstrap, Tailwind), JavaScript (jQuery, Vue.js), PHP (Laravel, CodeIgniter), Python (Django), and MySQL. I’m experienced in the full development lifecycle, with a particular strength in back-end architecture and API development. <br><br> In addition to core web development, I have practical experience in network management systems, including configuring and managing MikroTik devices and routers via API. I’m also adept at integrating third-party APIs such as payment gateways and messaging platforms like the WhatsApp API — enabling automation, real-time communication, and streamlined business operations. <br><br> I’m passionate about solving real-world problems with clean, scalable code, and I’m always looking to expand my expertise with emerging technologies.</h4>
                 </div>
             </div>
         </section>
@@ -257,6 +265,26 @@
                     <div class="row g-0">
                         <div class="col-12 col-md-4 text-center">
                             <div class="work-card-img-container p-4">
+                                <img src="assets/img/nim_logo.png" class="img-fluid work-card-img" alt="Logo Nimnet">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-center">
+                                <h4 class="card-title fw-bold">Full Stack Developer</h4>
+                                <h6 class="card-subtitle">PT. Nesta Indo Media</h6>
+                                <div class="mt-3">
+                                    <div>May 2024 - Present</div>
+                                    <div>Ungaran, Indonesia · On-Site</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-5 work-card mx-3 mx-sm-0">
+                    <div class="row g-0">
+                        <div class="col-12 col-md-4 text-center">
+                            <div class="work-card-img-container p-4">
                                 <img src="assets/img/saraga_logo.svg" class="img-fluid work-card-img" alt="Logo Techarea">
                             </div>
                         </div>
@@ -265,7 +293,7 @@
                                 <h4 class="card-title fw-bold">Full Stack Developer</h4>
                                 <h6 class="card-subtitle">Saraga</h6>
                                 <div class="mt-3">
-                                    <div>February 2024 - Present</div>
+                                    <div>February 2024 - May 2024</div>
                                     <div>Jakarta, Indonesia · Remote</div>
                                 </div>
                             </div>
@@ -286,7 +314,7 @@
                                 <h6 class="card-subtitle">Techarea Indonesia</h6>
                                 <div class="mt-3">
                                     <div>November 2021 - August 2023</div>
-                                    <div>Semarang, Central Java, Indonesia · On-site</div>
+                                    <div>Semarang, Indonesia · On-site</div>
                                 </div>
                             </div>
                         </div>
@@ -306,7 +334,7 @@
                                 <h6 class="card-subtitle">Techarea Indonesia</h6>
                                 <div class="mt-3">
                                     <div>March 2021 - May 2021</div>
-                                    <div>Semarang, Central Java, Indonesia · On-site</div>
+                                    <div>Semarang, Indonesia · On-site</div>
                                 </div>
                             </div>
                         </div>
@@ -327,6 +355,16 @@
 
                 <div class="row container custom-container">
                     <div class="col-12 col-md-6">
+                        <div class="card mb-5 project-card" onclick="modalToggle('nimnet_dashboard')">
+                            <img src="assets/img/nimnet/dashboard_1.png" class="img-fluid" alt="Project image">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold project-name">NIMNET Dashboard</h5>
+                                <h6 class="text-white-50">Customer & Network Management System</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
                         <div class="card mb-5 project-card" onclick="modalToggle('harum_mekar')">
                             <img src="assets/img/harum_mekar/dashboard.png" class="img-fluid" alt="Project image">
                             <div class="card-body">
@@ -335,7 +373,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
+                <div class="row container custom-container">
                     <div class="col-12 col-md-6">
                         <div class="card mb-5 project-card" onclick="modalToggle('silvi_medika')">
                             <img src="assets/img/hr_silvi_medika/dashboard.png" class="img-fluid" alt="Project image">
@@ -345,9 +385,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="row container custom-container">
                     <div class="col-12 col-md-6">
                         <div class="card mb-5 project-card" onclick="modalToggle('ups')">
                             <img src="assets/img/ups/dashboard.png" class="img-fluid" alt="Project image">
@@ -357,7 +395,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
+                <div class="row container custom-container">
                     <div class="col-12 col-md-6">
                         <div class="card mb-5 project-card" onclick="modalToggle('upods_locator')">
                             <img src="assets/img/upods_locator/home.png" class="img-fluid" alt="Project image">
@@ -367,9 +407,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="row container custom-container">
                     <div class="col-12 col-md-6">
                         <div class="card mb-5 project-card" onclick="modalToggle('milla_laundry')">
                             <img src="assets/img/milla_laundry/cek invoice.png" class="img-fluid" alt="Project image">
@@ -379,7 +417,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
+                <div class="row container custom-container">
                     <div class="col-12 col-md-6">
                         <div class="card mb-5 project-card" onclick="modalToggle('silapor')">
                             <img src="assets/img/silapor/dashboard.png" class="img-fluid" alt="Project image">
@@ -389,9 +429,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="row container custom-container">
                     <div class="col-12 col-md-6">
                         <div class="card mb-5 project-card" onclick="modalToggle('trashify')">
                             <img src="assets/img/trashify/home.png" class="img-fluid" alt="Project image">
@@ -401,24 +439,14 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
+                <div class="row container custom-container">
                     <div class="col-12 col-md-6">
                         <div class="card mb-5 project-card" onclick="modalToggle('mis_salafiyah')">
                             <img src="assets/img/mis_salafiyah/login.png" class="img-fluid" alt="Project image">
                             <div class="card-body">
                                 <h5 class="card-title fw-bold project-name">MIS Salafiyah</h5>
-                                <h6 class="text-white-50">School Management System</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row container custom-container">
-                    <div class="col-12 col-md-6">
-                        <div class="card mb-5 project-card" onclick="modalToggle('siasda')">
-                            <img src="assets/img/siasda/home.png" class="img-fluid" alt="Project image">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold project-name">Daarul Amanah Islamic Boarding School</h5>
                                 <h6 class="text-white-50">School Management System</h6>
                             </div>
                         </div>
@@ -434,6 +462,18 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="row container custom-container">
+                    <!-- <div class="col-12 col-md-6">
+                        <div class="card mb-5 project-card" onclick="modalToggle('siasda')">
+                            <img src="assets/img/siasda/home.png" class="img-fluid" alt="Project image">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold project-name">Daarul Amanah Islamic Boarding School</h5>
+                                <h6 class="text-white-50">School Management System</h6>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
             </div>
         </section>
 
@@ -446,6 +486,17 @@
                         <span>&nbsp;Tech Stack</h1></span>
                     </h1>
                 </div>
+
+                <!-- Slider main container -->
+                <!-- <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide mx-3 text-center">
+                            <svg class="tech-stack-svg" viewBox="0 0 256 134" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet"><g fill-rule="evenodd"><ellipse fill="#8993BE" cx="128" cy="66.63" rx="128" ry="66.63"/><path d="M35.945 106.082l14.028-71.014H82.41c14.027.877 21.041 7.89 21.041 20.165 0 21.041-16.657 33.315-31.562 32.438H56.11l-3.507 18.411H35.945zm23.671-31.561L64 48.219h11.397c6.137 0 10.52 2.63 10.52 7.89-.876 14.905-7.89 17.535-15.78 18.412h-10.52zM100.192 87.671l14.027-71.013h16.658l-3.507 18.41h15.78c14.028.877 19.288 7.89 17.535 16.658l-6.137 35.945h-17.534l6.137-32.438c.876-4.384.876-7.014-5.26-7.014H124.74l-7.89 39.452h-16.658zM153.425 106.082l14.027-71.014h32.438c14.028.877 21.042 7.89 21.042 20.165 0 21.041-16.658 33.315-31.562 32.438h-15.781l-3.507 18.411h-16.657zm23.67-31.561l4.384-26.302h11.398c6.137 0 10.52 2.63 10.52 7.89-.876 14.905-7.89 17.535-15.78 18.412h-10.521z" fill="#232531"/></g></svg>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-scrollbar"></div>
+                </div> -->
 
                 <div class="d-flex">
                     <!-- PHP -->
@@ -549,7 +600,7 @@
                         <div class="col mb-md-0">
                             <div class="d-flex text-center justify-content-center align-items-center" role="contentinfo">
                                 <p class="fw-normal font-small mb-0">
-                                    &copy; 2024 - Akbar Lintang Aji.</p>
+                                    &copy; 2025 - Akbar Lintang Aji.</p>
                             </div>
                         </div>
                     </div>
@@ -558,6 +609,47 @@
         </section>
 
         <!-- Projects Modal -->
+        <!-- NIMNET Dashboar -->
+        <div class="modal fade" id="nimnet_dashboard" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                <div class="modal-content text-white">
+                    <div class="modal-header border-0">
+                        <h3 class="modal-title fw-bold" id="exampleModalLabel">NIMNET Dashboard</h3>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <h4 class="fw-bolder">About</h4>
+                            <p>This system is developed as an integrated CRM and NMS platform to manage customer data, billing, and network access. It records detailed customer information, handles monthly billing, and controls customer MikroTik devices via API. All modules are interconnected, ensuring that changes in customer status or billing are reflected in the network settings. Access to specific features is restricted based on user roles.</p>
+                        </div>
+
+                        <div class="mt-4 mb-3">
+                            <h4 class="fw-bold">Technologies</h4>
+                            <div>
+                                <span class="tech-stack-badge">HTML</span>
+                                <span class="tech-stack-badge">Laravel</span>
+                                <span class="tech-stack-badge">Bootstrap</span>
+                                <span class="tech-stack-badge">JavaScript</span>
+                                <span class="tech-stack-badge">jQuery</span>
+                                <span class="tech-stack-badge">Vue.js</span>
+                                <span class="tech-stack-badge">Mikrotik</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <img src="assets/img/nimnet/login.png" class="img-fluid mb-2" alt="Project image">
+                            <img src="assets/img/nimnet/dashboard_1.png" class="img-fluid mb-2" alt="Project image">
+                            <img src="assets/img/nimnet/dashboard_2.png" class="img-fluid mb-2" alt="Project image">
+                            <img src="assets/img/nimnet/billings.png" class="img-fluid mb-2" alt="Project image">
+                            <img src="assets/img/nimnet/tickets.png" class="img-fluid mb-2" alt="Project image">
+                            <img src="assets/img/nimnet/settings.png" class="img-fluid mb-2" alt="Project image">
+                            <img src="assets/img/nimnet/customer_dashboard.png" class="img-fluid mb-2" alt="Project image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Harum Mekar -->
         <div class="modal fade" id="harum_mekar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
@@ -1014,6 +1106,9 @@
         <!-- Typed js -->
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
+        <!-- Swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
         <script>
             function modalToggle(params) {
                 $('#'+params.toString()).modal('show');
@@ -1024,6 +1119,21 @@
                 typeSpeed: 50,
                 loop: true,
                 backSpeed: 25,
+            });
+
+            const swiper = new Swiper('.swiper', {
+                direction: 'horizontal',
+                loop: true,
+                slidesPerView: 2,
+                spaceBetween: 10,
+                freeMode: true,
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+                autoplay: {
+                    delay: 1500,
+                    disableOnInteraction: false,
+                },
             });
         </script>
     </body>
